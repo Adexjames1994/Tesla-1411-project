@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .mega-content .box h3{
+      margin-bottom: 10px;
+      font-size: 10px;
+      color: black;
+    }
+    .mega-content .box ul{
+      list-style: none;
+    }
+    .mega-content .box ul li{
+      padding: 5px 0;
+    }
+    .mega-content .box ul li a{
+      color: black;
+      text-decoration: none;
+      transition: .3s ease;
+    }
+    .mega-content .box ul li a:hover{
+      color: aqua;
+    }
+    .menu li:hover .mega-menu{
+      display: block;
+    }
+
+    /* mobli menu */
+    .hamburger{
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+    }
+    .mobile-menu{
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #121212;
+      display: none;
+      flex-direction: column;
+      padding: 15px;
+    }
+    .mobile-menu a{
+      color: white;
+      text-decoration: none;
+      padding: 15px ;
+      display: block;
+    }
+    /* show mob screen mega menu */
+    .mobile-mega-menu{
+      display: none;
+      color: black;
+      padding: 15px;
+      background: white;
+    }
+
+    @media screen (max-width: 768px){
+      .menu{
+        display: block;
+      }
+      .hamburger{
+        display: none;
+      }
+      .mobile-menu.active{
+        display: flex;
+      }
+      .mobile-mega-menu{
+        display: flex;
+      }
+      .menu li:hover .mega-menu{
+        display: none;
+      }
+      .menu li:hover .mobile-mega-menu{
+        display: block;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  
+
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function(){
+      document.querySelector('.mobile-menu').classList.toggle('active');
+    });
+
+    document.querySelector('.mobile-mega-toggle').addEventListener('click', function(e){
+      e.preventDefault();
+      document.querySelector('.mobile-mega-menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

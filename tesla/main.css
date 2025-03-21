@@ -1,0 +1,61 @@
+body{
+  /* changes the text coloe; */
+  color: red;
+
+  /* changes the background color */
+  background-color: black;
+
+  /* changes the page image */
+  background: url();
+
+  /* changes the size text */
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
+  font-style: normal;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  /* (works wiyh paragraph) */
+  line-height: 20px;
+
+  border: 1px solid black;
+  border-radius: 8px;
+  border-color: black;
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 0;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 0;
+  opacity: 1;
+  box-sizing: ;
+  text-shadow: 0ch 0ch 0ch; 
+  transition: all 0.3s ease;
+  transform: rotateX('angle');
+
+  cursor: pointer;
+  pointer-events: none;
+
+  animation: fadeIn 1s ease-in-out;
+  @media screen and (max-width: 768px){
+    font-size: 14px;
+    
+  }
+}
