@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1 id="h1">HELLO WORLD</h1>
+  <p id="p1">Paragraph text</p>
+  <p id="t1">paragraph text that is accessed</p>
+  <p id="p2">This is a paragraph that will be style</p>
+  <button onclick="logMe()">press me</button>
+  <p id="p3">this is adeola</p>
+  <script>
+    // alert('Hello World');
+    // alert('Hello World2');
+    // console.log('hello world');
+    // console.log('hello world1');
+    // console.log('hello world2');
+
+    // let budget = 200;
+    // alert(budget);
+
+    // let username = 'John';
+    // console.log(username);
+
+    // let points = 35;
+    // points = 45;
+    // alert(points);
+
+    let msg = 'solo';
+    msg = 'duo';
+    msg = 'squad';
+    console.log(msg);
+
+    document.getElementById('p1').textContent = 'update header';
+    document.getElementById('h1').textContent = 'update header';
+    let c = document.getElementById('t1').textContent;
+
+    console.log(c);
+    alert(c);
+
+    let p = document.getElementById("p2");
+    p.style.color = "blue";
+    p.style.border = "solid";
+    console.log(p)
+
+    function logMsg() {
+      console.log('pressed!')
+      
+    }
+    function changeColor() {
+      let x = document.getElementById('p3');
+      x.style.color = "green";
+      console.log()
+    }
+  </script>
+
+
+</body>
+</html>
